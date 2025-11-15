@@ -11,7 +11,37 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+
+import streamlit as st
+...
+
+# ---- INSERT CSS FIXES BELOW ----
+st.markdown("""
+<style>
+/* Sidebar fixes */
+section[data-testid="stSidebar"] * {
+    color: #1a1a1a !important;
+}
+section[data-testid="stSidebar"] svg {
+    fill: #1a1a1a !important;
+}
+section[data-testid="stSidebar"] {
+    background-color: #f7f9fc !important;
+    border-right: 1px solid #e0e4e8;
+}
+
+/* Top header fixes */
+header[data-testid="stHeader"] {
+    background-color: #ffffff !important;
+}
+header[data-testid="stHeader"] * {
+    color: #1a1a1a !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 warnings.filterwarnings("ignore")
+
 
 # Import hero component (app_header.py must be next to app.py). Fallback to minimal header.
 try:
@@ -19,6 +49,7 @@ try:
 except Exception:
     def render_starting_hero(*args, **kwargs):
         st.markdown("<h1 style='margin:8px 0;'>Stock Market Predictor</h1>", unsafe_allow_html=True)
+
 
 # -------------------------
 # Gemini AI Chatbot with proper error handling
