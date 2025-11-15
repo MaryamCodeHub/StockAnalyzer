@@ -35,7 +35,7 @@ header[data-testid="stHeader"] {
     background-color: ##757373 !important;
 }
 header[data-testid="stHeader"] * {
-    color: #000000 !important;
+    color: ##a68d8d !important;
 }
 </style>
 """, unsafe_allow_html=True)
