@@ -32,7 +32,7 @@ section[data-testid="stSidebar"] {
 
 /* Top header fixes */
 header[data-testid="stHeader"] {
-    background-color: #000000 !important;
+    background-color: ##757373 !important;
 }
 header[data-testid="stHeader"] * {
     color: #000000 !important;
