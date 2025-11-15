@@ -1,0 +1,24 @@
+# Virtual env
+.venv/
+env/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs
+.vscode/
+.idea/
+
+# Streamlit / logs / models
+.streamlit/
+logs/
+models/
+*.pkl
+
+# Env files
+.env
+.env.local

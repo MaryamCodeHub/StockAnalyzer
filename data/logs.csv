@@ -1,0 +1,1 @@
+timestamp,symbol,price,sentiment_score,prediction,actual_change,prediction_accuracy,prediction_magnitude,sentiment_label,timeframe,confidence,trade_suggestion,model_version
